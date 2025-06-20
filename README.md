@@ -48,21 +48,8 @@
 
 ## 📁 Project Structure
 
-HotelEase/
-├── src/
-│ └── components/
-│ ├── Chatbot.jsx # Chatbot UI Component
-│ ├── Navbar.jsx # Navigation Bar
-│ ├── ExploreRooms.jsx
-│ ├── Hero.jsx
-│ └── MyBookings.jsx
-├── backend/
-│ ├── main.py
-│ ├── .env
-│ └── pycache/
-├── public/
-├── README.md
-└── package.json
+![image](https://github.com/user-attachments/assets/568469ee-b8db-4521-9316-a0946c224806)
+
 
 ## ⚙️ Installation & Setup
 
