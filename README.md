@@ -49,20 +49,17 @@
 ## 📁 Project Structure
 
 HotelEase/
-│
 ├── src/
-│   └── components/
-│       ├── Chatbot.jsx          # Chatbot UI Component
-│       ├── Navbar.jsx           # Navigation Bar
-│       ├── ExploreRooms.jsx
-│       ├── Hero.jsx
-│       └── MyBookings.jsx
-│
+│ └── components/
+│ ├── Chatbot.jsx # Chatbot UI Component
+│ ├── Navbar.jsx # Navigation Bar
+│ ├── ExploreRooms.jsx
+│ ├── Hero.jsx
+│ └── MyBookings.jsx
 ├── backend/
-│   ├── main.py
-│   ├── .env
-│   └── __pycache__/
-│
+│ ├── main.py
+│ ├── .env
+│ └── pycache/
 ├── public/
 ├── README.md
 └── package.json
@@ -107,7 +104,8 @@ HotelEase/
 ## 📣 Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change. Contributions that improve functionality, design, or documentation are highly appreciated.
-🙌 Acknowledgments
+
+## 🙌 Acknowledgments
 
 TBO.com for hotel API
 
