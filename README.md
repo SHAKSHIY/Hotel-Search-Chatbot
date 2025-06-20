@@ -1,112 +1,115 @@
-# HotelEase - AI-Powered Hotel Booking Chatbot
+# 🏨 HotelEase – AI-Powered Hotel Booking Chatbot
 
-# Overview
+## 📌 Overview
 
-HotelEase is an AI-driven chatbot designed to simplify hotel search and booking processes. It offers real-time hotel recommendations based on user preferences like location, budget, check-in/out dates, and number of guests. Additionally, it provides travel itinerary suggestions, making trip planning seamless.
+**HotelEase** is an AI-driven chatbot that simplifies hotel searching and booking. With smart, conversational interaction, it provides real-time hotel recommendations based on user preferences such as location, budget, check-in/check-out dates, and number of guests. It also offers travel itinerary suggestions, making trip planning seamless and user-friendly.
 
-# Features
+---
 
-Conversational Hotel Booking: Users can search for hotels via chat.
+## ✨ Features
 
-Personalized Recommendations: AI-driven hotel suggestions based on user preferences.
+- **💬 Conversational Hotel BookingSearch for hotels by chatting naturally with the bot.**
 
-Instant Booking
+- **🧠 Personalized RecommendationsAI suggests hotels tailored to your preferences.**
 
-My Bookings Management: Users can view, modify, or cancel bookings.
+- **⚡ Instant BookingBook hotels directly from the chatbot interface.**
 
-Travel Itinerary Suggestions: AI recommends must-visit places for a chosen destination.
+- **📁 My Bookings ManagementView, modify, or cancel your hotel reservations easily.**
 
-Text Support: Users can interact with the chatbot using text commands.
+- **🗽 Travel Itinerary SuggestionsGet AI-powered recommendations for must-visit places at your destination.**
 
-# Technology Stack
+- **⌨️ Text SupportChat with the bot using natural language text commands.**
 
-# Frontend
+---
 
-React.js (User Interface)
+## 💠 Technology Stack
 
-CSS (Styling)
+### 🔹 Frontend
 
-# Backend
+- React.js – UI framework
 
-Node.js & Express.js (Server & API Handling)
+- CSS – Styling and layout
 
-MongoDB (Database for storing user bookings & preferences)
+### 🔹 Backend
 
-# AI & NLP
+- Node.js & Express.js – API and server handling
 
-Gemini / Dialogflow (Chatbot AI for NLP Processing)
+- MongoDB – Stores bookings and user preferences
 
-Sentiment Analysis for user interactions
+### 🔹 AI & NLP
 
-# API Integrations
+- Gemini / Dialogflow – Natural Language Processing for chatbot conversations
 
-TBO API (Fetching real-time hotel data)
+- Sentiment Analysis – Enhances interaction understanding
 
-# 📂 Project Structure
+### 🔹 API Integrations
+
+- **TBO API** – For real-time hotel search data
+
+## 📁 Project Structure
 
 HotelEase/
-│── src/
-│   ├── components/
-│   │   ├── Chatbot.jsx  # Chatbot UI Component
-│   │   ├── Navbar.jsx      # Navigation Bar
-│   │   ├── ExploreRooms.jsx
-│   │   ├── Hero.jsx
-│   │   ├── MyBookings.jsx
-│── backend/
+│
+├── src/
+│   └── components/
+│       ├── Chatbot.jsx          # Chatbot UI Component
+│       ├── Navbar.jsx           # Navigation Bar
+│       ├── ExploreRooms.jsx
+│       ├── Hero.jsx
+│       └── MyBookings.jsx
+│
+├── backend/
 │   ├── main.py
 │   ├── .env
-│   ├── _pycache_
-│── public/
-│── README.md
-│── package.json
+│   └── __pycache__/
+│
+├── public/
+├── README.md
+└── package.json
 
-# Installation & Setup
+## ⚙️ Installation & Setup
 
-# 1 Clone the Repository
+### 1. Clone the Repository
 
-In main branch, git clone https://github.com/SHAKSHIY/HotelEase.git
+- git clone https://github.com/SHAKSHIY/Hotel-Search-Chatbot.git
 
-cd HotelEase
+- cd Hotel-Search-Chatbot
 
-# 2 Install Dependencies
+### 2. Install Dependencies
 
-For Frontend
+#### Frontend
 
-cd HotelEase
+- cd HotelEase
+- npm install
+- npm run dev
 
-npm install
+#### Backend
 
-npm run dev
+- cd backend
+- pip install uvicorn fastapi python-dotenv requests google-generativeai
 
-For Backend
+### 3. Configure Environment Variables
 
-cd backend
+- Create a .env file inside the backend/ directory and add the following keys:
 
-pip install uvicorn
+- TBO_API_KEY=your_tbo_api_key
+- GEMINI_API_KEY=your_gemini_api_key
 
-pip install fastapi
+## 🔌 API Endpoints
 
-pip install python-dotenv
+| Method | Endpoint                                 | Description                     |
+|--------|------------------------------------------|---------------------------------|
+| GET    | `/api/hotels?location=Paris&budget=200` | Fetch hotel listings by query  |
+| POST   | `/api/bookings`                          | Book a selected hotel          |
+| GET    | `/api/bookings/:userId`                  | Retrieve bookings for a user   |
 
-pip install requests
 
-pip install google-generativeai
+## 📣 Contributing
 
-# 3 Environment Variables
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change. Contributions that improve functionality, design, or documentation are highly appreciated.
+🙌 Acknowledgments
 
-Create a .env file in the backend directory and add:
-TBO.com API 
-GEMINI_API_KEY
+TBO.com for hotel API
 
-# API Endpoints
-
-Hotel Search API
-
-GET /api/hotels?location=Paris&budget=200 → Returns hotel listings.
-
-POST /api/bookings → Books a selected hotel.
-
-GET /api/bookings/:userId → Fetches user’s confirmed bookings.
-
-# Demo Video & Screenshots
+Google Gemini / Dialogflow for AI integration
 
